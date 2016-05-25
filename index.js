@@ -33,7 +33,6 @@ app.get('/<API_ROUTE>', function (req, res) {
 
 
 var http=require('http');
-res.setEncoding('utf8');
 
    http.get('<API_URL>', function(data){
         var str = '';
@@ -75,9 +74,9 @@ app.get('/fitnessAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/fitness/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -110,9 +109,9 @@ app.get('/petsAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/pets/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -146,9 +145,9 @@ app.get('/nutritionAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/nutrition/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -178,9 +177,9 @@ app.get('/foodAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/food/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -211,9 +210,9 @@ app.get('/familyAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/family/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -247,9 +246,9 @@ app.get('/mindAndBodyAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/mind-body/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -288,9 +287,9 @@ app.get('/homeAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/home/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -327,9 +326,9 @@ app.get('/recipesAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/recipes/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -364,9 +363,9 @@ app.get('/weightLossAPI', function(req, res) {
 
 
     var http = require('http');
-res.setEncoding('utf8');
 
     http.get('http://www.health.com/weight-loss/feed', function(data) {
+data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
