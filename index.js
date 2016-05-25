@@ -49,6 +49,7 @@ var http=require('http');
 
              var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
 var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
 console.log(json);
 res.send(json);
@@ -92,6 +93,7 @@ app.get('/fitnessAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
           //  console.log(json);
             res.send(json);
@@ -128,6 +130,7 @@ app.get('/petsAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
           //  console.log(json);
             res.send(json);
@@ -165,6 +168,7 @@ app.get('/nutritionAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
           //  console.log(json);
             res.send(json);
@@ -198,6 +202,7 @@ app.get('/foodAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -232,6 +237,7 @@ app.get('/familyAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -269,6 +275,7 @@ app.get('/mindAndBodyAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -311,6 +318,7 @@ app.get('/homeAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -351,6 +359,7 @@ app.get('/recipesAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -389,6 +398,7 @@ app.get('/weightLossAPI', function(req, res) {
 
             var xml = str;
             xml = xml.replace(/&nbsp;/g, " ");
+            xml = xml.replace(/& /g, " and ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
