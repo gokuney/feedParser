@@ -48,6 +48,7 @@ var http=require('http');
              //got the data, now parse
 
              var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
 var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
 console.log(json);
 res.send(json);
@@ -76,7 +77,7 @@ app.get('/fitnessAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/fitness/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -90,6 +91,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
           //  console.log(json);
             res.send(json);
@@ -111,7 +113,7 @@ app.get('/petsAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/pets/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -125,6 +127,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
           //  console.log(json);
             res.send(json);
@@ -147,7 +150,7 @@ app.get('/nutritionAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/nutrition/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -161,6 +164,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
           //  console.log(json);
             res.send(json);
@@ -179,7 +183,7 @@ app.get('/foodAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/food/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -193,6 +197,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -212,7 +217,7 @@ app.get('/familyAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/family/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -226,6 +231,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -248,7 +254,7 @@ app.get('/mindAndBodyAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/mind-body/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -262,6 +268,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -289,7 +296,7 @@ app.get('/homeAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/home/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -303,6 +310,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -328,7 +336,7 @@ app.get('/recipesAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/recipes/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -342,6 +350,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
@@ -365,7 +374,7 @@ app.get('/weightLossAPI', function(req, res) {
     var http = require('http');
 
     http.get('http://www.health.com/weight-loss/feed', function(data) {
-data.setEncoding('utf8');
+     data.setEncoding('utf8');
         var str = '';
       //  console.log('Response is ' + data.statusCode);
 
@@ -379,6 +388,7 @@ data.setEncoding('utf8');
             //got the data, now parse
 
             var xml = str;
+            xml = xml.replace(/&nbsp;/g, " ");
             var json = xmlParser.toJson(xml); //returns a string containing the JSON structure by default
       //      console.log(json);
             res.send(json);
